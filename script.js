@@ -66,6 +66,13 @@ function clear() {
   currentOperation = null;
 };
 
+function deleteNumber() {
+  currentOperationScreen.textContent = currentOperationScreen.textContent
+    .toString()
+    .slice(0, -1);
+};
+
+
 
 function roundResult(number) {
     return Math.round(number * 1000) / 1000;
