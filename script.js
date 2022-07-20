@@ -79,6 +79,7 @@ function deleteNumber() {
   currentOperationScreen.textContent = currentOperationScreen.textContent
     .toString()
     .slice(0, -1);
+    if (currentOperationScreen.textContent === '') currentOperationScreen.textContent = '0';
 };
 
 // Add point and do not add more than one
