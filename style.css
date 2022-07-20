@@ -38,6 +38,7 @@ body {
     cursor: pointer;
     border: none;
     outline: none;
+    color: black;
 }
 #clearBtn {
     background-color: #a2d48a;
