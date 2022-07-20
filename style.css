@@ -7,8 +7,21 @@ body {
     align-items: center;
     height: 90vh;
     font-family: 'Roboto', sans-serif;
+    background-color: #eeeeee;
 }
 
+.calculator {
+    border: 1px solid #727272;
+    box-shadow: 3px 3px 10px black;
+    width: 380px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #8f8f8f;
+}
 .calculator-grid {
     width: 350px;
     height: 450px;
@@ -19,12 +32,16 @@ body {
 }
 .calculator-grid button {
     font-size: 20px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 2px #4a4a4a;
 }
 .output {
-    border: 1px solid black;
+    border: 1px solid #7a7a7a;
+    border-radius: 15px;
     width: 310px;
     padding: 10px 20px;
     text-align: right;
+    background-color: #eeeeee;
 }
 .screen-previous {
     font-size: 20px;
