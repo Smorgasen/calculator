@@ -1,35 +1,44 @@
-function add(num1, num2) {
-    return num1 + num2;
+function add(a, b) {
+    return a + b;
 }
-// console.log (add(1, 3))
 
-function subtract(num1, num2) {
-    return num1 - num2;
+function subtract(a, b) {
+    return a - b;
 }
-// console.log(subtract(1, 5))
 
-function multiply(num1, num2) {
-    return num1 * num2;
+function multiply(a, b) {
+    return a * b;
 }
-// console.log (multiply(4, 2))
 
-function divide(num1, num2) {
-    return num1 / num2;
+function divide(a, b) {
+    return a / b;
 }
-// console.log (divide(6, 2))
 
-function operate(operator, num1, num2) {
+function operate(operator, a, b) {
+    a = Number(a);
+    b = Number(b);
     if (operator == '+') {
-        return add(num1, num2);
+        return add(a, b);b;
     }
     else if (operator == '-') {
-        return subtract(num1, num2);
+        return subtract(a, b);
     }
-    else if (operator == '*') {
-        return multiply(num1, num2);
+    else if (operator == 'x') {
+        return multiply(a, b);
     }
-    else if (operator == '/') {
-        return divide(num1, num2);
+    else if (operator == '÷') {
+        if (b === 0) return null;
+        else return divide(a, b);
     }
 }
-// console.log (operate('*', 4, 2))
+
+
+
+const numberButtons = document.querySelectorAll('[data-number]');
+const operationButtons = document.querySelectorAll('[data-operation]');
+const equalsButton = document.getElementById('equalsBtn');
+const allClearButton = document.getElementById('clearBtn');
+const deleteButton = document.getElementById('deleteBtn');
+const pointButton = document.getElementById('pointBtn');
+const lastOperationScreen = document.getElementById('lastOperatidataonScren');
+const currentOperationScreen = document.getElementById('currentOperationScreen');
