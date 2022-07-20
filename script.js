@@ -72,7 +72,15 @@ function deleteNumber() {
     .slice(0, -1);
 };
 
-
+function appendPoint() {
+  if (screenReset) {
+    return resetScreen();
+  }
+  if (currentOperationScreen.textContent === "") {
+    return (secondOperand.textContent = "0");
+  } else if (currentOperationScreen.textContent.includes(".")) return;
+  currentOperationScreen.textContent += ".";
+};
 
 function roundResult(number) {
     return Math.round(number * 1000) / 1000;
