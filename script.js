@@ -53,7 +53,7 @@ function evaluate() {
     return;
   }
   if (currentOperation === "÷" && currentOperationScreen.textContent === '0') {
-    alert('You cannot divide by 0!');
+    alert('Division by 0 is not allowed!');
     return;
   }
   secondOperand = currentOperationScreen.textContent;
