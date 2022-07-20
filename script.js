@@ -12,7 +12,8 @@ const clearButton = document.getElementById("clearBtn");
 const deleteButton = document.getElementById("deleteBtn");
 const pointButton = document.getElementById("pointBtn");
 const previousOperation = document.getElementById("previousOperationScreen");
-const currentOperationScreen = document.getElementById("currentOperationScreen");
+const currentOperationScreen = document.getElementById("currentOperationScreen")
+currentOperationScreen.textContent = '0';
 
 // Listen to buttons and use appropriate functions (add numbers to screen, add operator to screen, evaluate, clear, delete one digit, add point)
 numberButtons.forEach((button) =>
