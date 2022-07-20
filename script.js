@@ -34,6 +34,15 @@ function appendNumber(number) {
   currentOperationScreen.textContent += number;
 };
 
+function setOperator(operator) {
+  if (currentOperation != null) evaluate();
+  firstOperand = currentOperationScreen.textContent;
+  currentOperation = operator;
+  previousOperationScreen.textContent = `${firstOperand} ${currentOperation}`;
+  screenReset = true;
+};
+
+
 function roundResult(number) {
     return Math.round(number * 1000) / 1000;
 };
