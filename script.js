@@ -131,3 +131,6 @@ function operate(operator, a, b) {
     else return divide(a, b);
   }
 };
+
+let copyright = document.querySelector('.copyright');
+copyright.textContent = `Copyright © ${new Date().getFullYear()} Smorgasen`;

@@ -10,11 +10,11 @@
     <title>Calculator</title>
 </head>
 <body>
+    <div class="output">
+        <div class="screen-previous" id="previousOperationScreen"></div>
+        <div class="screen-current" id="currentOperationScreen"></div>
+    </div>
     <div class="calculator-grid">
-        <div class="output">
-            <div class="screen-previous" id="previousOperationScreen"></div>
-            <div class="screen-current" id="currentOperationScreen"></div>
-        </div>
         <button class="span-two" id="clearBtn">C</button>
         <button id="deleteBtn">DEL</button>
         <button data-operation>÷</button>
@@ -33,6 +33,15 @@
         <button id="pointBtn">.</button>
         <button data-number>0</button>
         <button class="span-two" id="equalsBtn">=</button>
+    </div>
+    <div class="footer">
+        <div class="links">
+            <a href="https://github.com/Smorgasen" target="_blank"> <img src="images/github.png" alt="github icon" width="40"></a>
+            <a href="https://www.linkedin.com/in/yaroslav-ivanko-15a727162/" target="_blank"> <img src="images/linkedin.png" alt="linkedin icon" width="40"></a>
+            <a href="https://smorgasen-cv.netlify.app/" target="_blank"> <img src="images/cv.png" alt="curriculum vitae icon" width="40"></a>
+            <a href="mailto:yaroslaw.ivanko@gmail.com" target="_blank"><img src="images/gmail.png" alt="email icon" width="40"></a>
+        </div>
+        <p class="copyright"></p>
     </div>
 </body>
 </html>
