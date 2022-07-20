@@ -29,6 +29,10 @@ function resetScreen() {
   screenReset = false;
 };
 
+function appendNumber(number) {
+  if (currentOperationScreen.textContent === "0" || screenReset) resetScreen();
+  currentOperationScreen.textContent += number;
+};
 
 function roundResult(number) {
     return Math.round(number * 1000) / 1000;
