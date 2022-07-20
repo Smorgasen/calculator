@@ -35,6 +35,13 @@ body {
     border-radius: 15px;
     box-shadow: 1px 1px 2px #4a4a4a;
 }
+.calculator-grid button:hover {
+    background-color: #c7c7c7;
+    transition: 0.3s;
+}
+.calculator-grid button:active {
+    background-color: #686868;
+}
 .output {
     border: 1px solid #7a7a7a;
     border-radius: 15px;
@@ -42,6 +49,8 @@ body {
     padding: 10px 20px;
     text-align: right;
     background-color: #eeeeee;
+    word-wrap: break-word;
+    word-break: break-all;
 }
 .screen-previous {
     font-size: 20px;
