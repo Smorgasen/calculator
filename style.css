@@ -33,13 +33,20 @@ body {
 .calculator-grid button {
     font-size: 20px;
     border-radius: 15px;
-    box-shadow: 1px 1px 2px #4a4a4a;
+    box-shadow: 1px 1px 3px #4a4a4a;
+    cursor: pointer;
+    border: none;
+    outline: none;
 }
 #clearBtn {
     background-color: #a2d48a;
 }
 .calculator-grid #clearBtn:hover {
     background-color: #8bb677;
+    transition: 0.3s;
+}
+.calculator-grid #clearBtn:active {
+    background-color: #648555;
     transition: 0.3s;
 }
 #deleteBtn {
@@ -49,6 +56,9 @@ body {
     background-color: #6896b5;
     transition: 0.3s;
 }
+.calculator-grid #deleteBtn:active {
+    background-color: #527790;
+}
 #equalsBtn {
     background-color: #dccc7e;
 }
@@ -56,10 +66,17 @@ body {
     background-color: #b9ac6b;
     transition: 0.3s;
 }
+.calculator-grid #equalsBtn:active {
+    background-color: #8b8150;
+}
 .number:hover,
 #pointBtn:hover {
     background-color: #d6d6d6;
     transition: 0.3s;
+}
+.number:active,
+#pointBtn:active {
+    background-color: #898989;
 }
 .operator {
     background-color: #98aaca;
@@ -67,6 +84,9 @@ body {
 .operator:hover {
     background-color: #8696b2;
     transition: 0.3s;
+}
+.operator:active {
+    background-color: #687489;
 }
 
 .output {
