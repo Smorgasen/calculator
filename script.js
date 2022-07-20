@@ -58,6 +58,14 @@ function evaluate() {
   currentOperation = null;
 };
 
+function clear() {
+  currentOperationScreen.textContent = "0";
+  previousOperationScreen.textContent = "";
+  firstOperand = "";
+  secondOperand = "";
+  currentOperation = null;
+};
+
 
 function roundResult(number) {
     return Math.round(number * 1000) / 1000;
