@@ -1,0 +1,11 @@
+.calculator-grid {
+    width: 200px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.output {
+    grid-column: 1/5;
+}
+.span-two {
+    grid-column: span 2;
+}
