@@ -42,6 +42,22 @@ function setOperator(operator) {
   screenReset = true;
 };
 
+function evaluate() {
+  if (currentOperation == null || screenReset) {
+    return;
+  }
+  if (currentOperation === "÷" && currentOperationScreen.textContent === '0') {
+    alert('You cannot divide by 0!');
+    return;
+  }
+  secondOperand = currentOperationScreen.textContent;
+  currentOperationScreen.textContent = roundResult(
+      operate(currentOperation, firstOperand, secondOperand)
+  );
+  previousOperationScreen.textContent = `${firstOperand} ${currentOperation} ${secondOperand} =`;
+  currentOperation = null;
+};
+
 
 function roundResult(number) {
     return Math.round(number * 1000) / 1000;
