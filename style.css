@@ -8,6 +8,7 @@ body {
     height: 90vh;
     font-family: 'Roboto', sans-serif;
     background-color: #eeeeee;
+    color: black;
 }
 
 .calculator {
