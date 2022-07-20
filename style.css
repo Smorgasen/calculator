@@ -35,13 +35,40 @@ body {
     border-radius: 15px;
     box-shadow: 1px 1px 2px #4a4a4a;
 }
-.calculator-grid button:hover {
-    background-color: #c7c7c7;
+#clearBtn {
+    background-color: #a2d48a;
+}
+.calculator-grid #clearBtn:hover {
+    background-color: #8bb677;
     transition: 0.3s;
 }
-.calculator-grid button:active {
-    background-color: #686868;
+#deleteBtn {
+    background-color: #79b0d4;
 }
+.calculator-grid #deleteBtn:hover {
+    background-color: #6896b5;
+    transition: 0.3s;
+}
+#equalsBtn {
+    background-color: #dccc7e;
+}
+.calculator-grid #equalsBtn:hover {
+    background-color: #b9ac6b;
+    transition: 0.3s;
+}
+.number:hover,
+#pointBtn:hover {
+    background-color: #d6d6d6;
+    transition: 0.3s;
+}
+.operator {
+    background-color: #98aaca;
+}
+.operator:hover {
+    background-color: #8696b2;
+    transition: 0.3s;
+}
+
 .output {
     border: 1px solid #7a7a7a;
     border-radius: 15px;
@@ -74,4 +101,7 @@ body {
 .links {
     display: flex;
     gap: 10px;
+}
+.copyright {
+    font-size: 20px;
 }
