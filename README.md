@@ -1,7 +1,8 @@
 # Calculator
 
 <strong> Web representation of <em> Calculator</em>.</strong>
-<p style="background-color:#adadad">Currently no keyboard support. </p>
+
+Currently no keyboard support.
 
 Check out the website live <a href="https://smorgasen.github.io/calculator/" target="_blank"> here </a>.
 
